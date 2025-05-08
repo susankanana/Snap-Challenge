@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: hsl(0, 0%, 98%);
+}
+.navbar {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color:hsl(0, 0%, 41%);
+    padding: 0.5rem;
+    display: block;
+  }
+  .menu a:hover{
+    color: hsl(0, 0%, 8%);
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: hsl(0, 0%, 98%);
+    top: 2.5rem;
+    left: 0;
+    box-shadow: 0 4px 8px  hsl(0, 0%, 41%);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    min-width: 150px;
+    z-index: 10;
+    list-style: none;
+  }
+  
+  .dropdown-menu li a {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    color: hsl(0, 0%, 41%);
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .menubuttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .menubuttons button {
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .menubuttons button:first-child:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  
+  .menubuttons button:last-child {
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .menubuttons button:last-child:hover {
+    background-color: hsl(0, 0%, 41%);
+    color: white;
+  }
+  section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 450px;
+    margin-top: 1.5rem;
+  }
+  .left{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+  .left h1 {
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .details {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: hsl(0, 0%, 41%);
+  }
+  .left button {
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: hsl(0, 0%, 8%);
+    width:30%;
+    color: white;
+    border: none;
+  }
+  .left button:hover{
+    border: 2px solid hsl(0, 0%, 41%);
+    background-color:white ;
+    color:hsl(0, 0%, 8%);
+  }
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    width: 100%;
+  }
+  .logos img {
+    height: 20px;
+  }
+  .right{
+    width:30%;
+    display: flex;
+  }
+  .right img{
+    width: 100%;
+    height: 100%;
+  }
+  
